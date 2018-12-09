@@ -1,5 +1,9 @@
 body {}
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -69,9 +73,146 @@ body {}
 
 nav {}
 
-.main {}
+.main {
+    display: flex;
+}
 
-.footer {}
+.title {}
+
+.title-text {
+    /* font-family: Oswald-Light; */
+    font-family: Oswald Tahoma Arial;
+    color: #7e7e7e;
+    font-size: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.content__team-block {}
+
+.team-title {
+    background-color: #29c5e6;
+    width: 680px;
+    height: 44px;
+}
+
+.teamtitle-text {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teammembers-item {
+    width: 20%;
+}
+
+.member-link {}
+
+.member-img {
+    width: 100px;
+    height: 100px;
+}
+
+.member-title {
+    font-family: Oswald;
+    color: #8f8f8f;
+    font-size: 16px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.member-occupation {
+    font-family: Oswald;
+    color: #29c5e6;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.footer {
+    background-color: #7e7e7e;
+    width: 1260px;
+    height: 112px;
+}
+
+.footer-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.twitterfeed-block {}
+
+.tweeterfeed-title {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.twitterfeed-date {
+    font-family: Tahoma;
+    color: #b4aeae;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.twitterfeed-text {
+    font-family: Tahoma;
+    color: #dbdbdb;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+}
+
+.sitemap-block {
+    width: 151px;
+    height: 77px;
+}
+
+.sitemap-title {}
+
+.sitemap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sitemap-item {
+    height: 30%;
+}
+
+.sitemap-link {}
+
+.sitemap-name {}
 
 ul {
     list-style: none;
