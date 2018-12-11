@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Oswald";
+    src: url('../fonts/Oswald/Oswald-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url('../fonts/Oswald/Oswald-Light.ttf')
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/Roboto-Regular.ttf')
+}
+
 body {}
 
 a {
@@ -58,16 +73,66 @@ a {
     box-sizing: border-box;
 }
 
-.mainmenu {}
+.mainmenu {
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    /* width: 960px; */
+    /* height: 40px; */ 
+}
 
 .mainmenu-list {
     display: flex;
     justify-content: space-evenly;
+    align-items: stretch;
+    /* width: (100/8)%;  */
+    height: 40px; 
 }
 
-.mainmenu-item {}
+.mainmenu-item {
+    width: calc(100%/8);
+    background-color: #f3f3f3;
 
-.mainmenu-link {}
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: #e7e7e7; */
+    box-sizing: border-box;
+    font-family: Oswald;
+    color: #b2b2b2;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 38px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.mainmenu-link{
+    /* width: (100/8)%; */
+    height: 40px; 
+
+}
+
+.mainmenu-item a:hover{
+
+    /* width: (100/8)%; */
+    height: 40px; 
+    background-color: #29c5e6;
+    color: white;
+
+}
+
+.mainmenu-link {
+    /* width: 120px;
+    height: 40px; */
+}
+/* 
+.mainmenu-item a {
+    display: block;
+ 
+} */
 
 .aside {}
 
@@ -88,6 +153,54 @@ nav {}
     font-weight: 400;
     line-height: 40px;
     /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.content-block {
+    margin-left: 29px;
+}
+
+.content__citate-block {
+    width: 680px;
+    height: 170px;
+    background-color: #29c5e6;
+}
+
+.citate-text {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 33px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 34px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    vertical-align: middle;
+    /* padding: 23px 20px 33px 21px; */
+}
+
+.citate-author {
+    font-family: Oswald;
+    color: #1d8ea6;
+    font-size: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 34px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    margin-right: 36px;
+}
+
+.content-text {}
+
+.content-text-paragraph {
+    font-family: Tahoma;
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
     text-align: left;
 }
 
@@ -156,9 +269,10 @@ nav {}
 }
 
 .footer-wrapper {
-    max-width: 960px;
+    /* width: 100%; */
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .twitterfeed-block {}
@@ -195,24 +309,86 @@ nav {}
 
 .sitemap-block {
     width: 151px;
-    height: 77px;
+    /* height: 77px; */
+    height: 100%;
 }
 
-.sitemap-title {}
+.sitemap-title {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
 
 .sitemap-list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .sitemap-item {
-    height: 30%;
+    /* height: 30%; */
+    font-family: Tahoma;
+    color: #dbdbdb;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
 }
 
 .sitemap-link {}
 
 .sitemap-name {}
+
+.socialnetworks-block {}
+
+.socialnetworks-title {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.bigsocial-list {}
+
+.bigsocial-item {}
+
+.bigsocial-link {}
+
+.bigsocial-img {}
+
+.copyright-block {}
+
+.copyright-logo {}
+
+.copyright-link {}
+
+.copyright-img {}
+
+.copyright-text {
+    font-family: Tahoma;
+    color: #dbdbdb;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    /* Встроенный стиль */
+    font-family: Tahoma;
+    color: #dbdbdb;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: underline;
+    text-align: left;
+}
 
 ul {
     list-style: none;
@@ -234,12 +410,63 @@ h4 {}
     display: flex;
 }
 
+ul {
+    padding: 0;
+    /* margin-left: 20px; */
+}
+
 .sidebar {}
 
 .sidemenu {}
 
-.sidemenu-list {}
+.sidemenu-list {
+    /* margin: -30; */
+    list-style-type: none;
+}
 
-.sidemenu item {}
+.sidemenu-item {
+    /* display: block; */
+    list-style-type: square;
+    font-family: Oswald;
+    font-weight: 14px;
+    /* padding-left: 20px; */
+    /* margin-left: 20px; */
+    /* padding-left: -30; */
+    /* list-style-type: square; */
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    width: 250px;
+    height: 39px;
+}
 
-.sidemenu-link {}
+li a {
+    display: block;
+}
+
+.sidemenu-item a {
+    display: block;
+    padding-left: 20px;
+    height: 39px;
+    width: 250px;
+}
+
+.sidemenu-item a:hover {
+    background-color: #29c5e6;
+    color: white;
+}
+
+.sidemenu-link {
+    /* display: block; */
+    font-family: Oswald;
+    color: #29c5e6;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 16px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
