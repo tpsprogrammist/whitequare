@@ -508,18 +508,19 @@ ul {
 .sidemenu-list {
     /* margin: -30; */
     list-style-type: none;
+
 }
 
 .sidemenu-item {
     /* display: block; */
-    list-style-type: square;
+    list-style-type: none;
     font-family: Oswald;
     font-size: 14px;
     /* padding-left: 20px; */
     /* margin-left: 20px; */
     /* padding-left: -30; */
     /* list-style-type: square; */
-    background-color: #f1f1f1;
+    background-color: #8f8f8f;
     border-style: solid;
     border-width: 1px;
     border-color: #e7e7e7;
@@ -527,6 +528,8 @@ ul {
     background-color: #f3f3f3;
     width: 250px;
     height: 39px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 li a {
@@ -541,20 +544,21 @@ li a {
 }
 
 .sidemenu-item a:hover {
-    background-color: #29c5e6;
-    color: white;
+    color: #29c5e6;
 }
 
 .sidemenu-link {
     /* display: block; */
     font-family: Oswald;
-    color: #29c5e6;
+    color: #8f8f8f;;
     font-size: 14px;
     /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 16px;
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
+    vertical-align: middle;
+    
 }
 
 .side-map {}
