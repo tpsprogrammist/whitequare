@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
@@ -26,10 +29,11 @@
 
                 </div>
                 <div class="search-block">
-                    <input type="search" name="srch-input" id="srch-id" class="search-input" placeholder="Search">
-                    <button type="submit" class="search-button">GO</button>
 
-
+                    <form action="/pi.php">
+                        <input type="search" name="srch-input" id="srch-id" class="search-input" placeholder="Search">
+                        <button type="submit" class="search-button">GO</button>
+                    </form>
                 </div>
             </div>
             <nav class="mainmenu">
@@ -60,6 +64,12 @@
                     <li class="mainmenu-item">
                         <a href="#" class="mainmenu-link">CONTACTS</a>
                     </li>
+                    <li class="mainmenu-item">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+
 
                 </ul>
 
@@ -395,11 +405,10 @@
                 </div>
                 <p>
                     <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                        <img style="border:0;width:88px;height:31px"
-                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                            alt="Правильный CSS!" />
-                        </a>
-                    </p>
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Правильный CSS!"
+                        />
+                    </a>
+                </p>
 
             </div>
 

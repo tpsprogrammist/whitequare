@@ -13,7 +13,10 @@
     src: url('../fonts/Roboto/Roboto-Regular.ttf')
 }
 
-body {}
+body {
+    /* background-color: #f3f3f3;
+    border: 1px solid #e7e7e7; */
+}
 
 a {
     text-decoration: none;
@@ -27,50 +30,71 @@ a {
 .header {
     display: flex;
     flex-direction: column;
+    
 }
 
 .logo-header {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 .logo-block {
     float: left;
     width: 161px;
     height: 38px;
+    vertical-align: middle;
 }
 
 .logo-link {}
 
 .search-block {
     float: right;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e7e7e7;
-    box-sizing: border-box;
-    background-color: #f3f3f3;
-    width: 210px;
-    height: 34px
-}
-
-.search-input {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e7e7e7;
-    box-sizing: border-box;
-    background-color: #f3f3f3;
-    width: 156px;
-    height: 30px;
-}
-
-.search-button {
-    background-color: #29c5e6;
-    width: 40px;
-    height: 30px;
-    border-width: 0px;
+    border: none;
+    /* border-style: solid; */
+    /* border-width: 1px; */
     /* border-color: #e7e7e7; */
     box-sizing: border-box;
+    /* background-color: #f3f3f3; */
+    /* width: 210px; */
+    /* height: 34px;
+    vertical-align: middle;
+    margin: 0; */
+}
+
+input[type=search] {
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    box-sizing: border-box;
+    width: 200px;
+    height: 32px;
+    padding: 6px;
+    margin-top: 9px;
+    font-size: 17px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    font-family: "Oswald", "Tahoma";
+    color: #b2b2b2;
+}
+
+.search-block button {
+    float: right;
+    padding: 9px 10px;
+    margin-top: 9px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    background-color: #29c5e6;
+    font-family: Oswald;
+    color: white;
 }
 
 .mainmenu {
@@ -109,7 +133,6 @@ a {
 }
 
 .mainmenu-link {
-    /* width: (100/8)%; */
     height: 40px;
 }
 
@@ -120,16 +143,14 @@ a {
     color: white;
 }
 
-.mainmenu-link {
-    /* width: 120px;
-    height: 40px; */
+.mainmenu .icon{
+    display: none;
 }
 
-/* 
-.mainmenu-item a {
-    display: block;
- 
-} */
+@media screen and (max-width: 600px) {
+    
+}
+
 
 .aside {}
 
@@ -203,27 +224,18 @@ nav {}
 
 .content__team-block {}
 
-.content-images{
+.content-images {}
 
-}
-
-.contentimages-list{
+.contentimages-list {
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.contentimages-item{
+.contentimages-item {}
 
-}
+.contentimg-link {}
 
-.contentimg-link{
-
-}
- 
-.contentimages{
-
-}
+.contentimages {}
 
 .team-title {
     background-color: #29c5e6;
@@ -349,16 +361,14 @@ nav {}
     margin: 0;
 }
 
-.two-columns{
+.two-columns {
     margin-top: 12px;
     display: flex;
 }
 
-.column1 .column2{
-    
-}
+.column1 .column2 {}
 
-.column2{
+.column2 {
     margin-left: 84px;
 }
 
@@ -378,7 +388,6 @@ nav {}
     padding: 0;
 }
 
-
 .sitemap-name {
     padding: 0;
     /* height: 30%; */
@@ -391,7 +400,6 @@ nav {}
 }
 
 .sitemap-link {}
-
 
 .socialnetworks-block {
     /* height: 200px; */
@@ -412,13 +420,13 @@ nav {}
     margin: 0;
 }
 
-.bigsocial{
+.bigsocial {
     display: inline;
     padding: 0;
     margin: 0;
 }
 
-.bigsocial ul{
+.bigsocial ul {
     padding: 0;
     margin: 0;
 }
@@ -436,17 +444,17 @@ nav {}
 
 .bigsocial-img {}
 
-.smallsocial{
+.smallsocial {
     /* display: flex; */
     height: 40px;
 }
 
-.smallsocial ul{
+.smallsocial ul {
     padding: 0;
     margin: 0;
 }
 
-.smallsocial-list{
+.smallsocial-list {
     display: flex;
     justify-content: space-evenly;
 }
@@ -492,6 +500,8 @@ h3 {}
 
 h4 {}
 
+
+
 .logo-header {
     display: flex;
 }
@@ -508,7 +518,6 @@ ul {
 .sidemenu-list {
     /* margin: -30; */
     list-style-type: none;
-
 }
 
 .sidemenu-item {
@@ -550,7 +559,8 @@ li a {
 .sidemenu-link {
     /* display: block; */
     font-family: Oswald;
-    color: #8f8f8f;;
+    color: #8f8f8f;
+    ;
     font-size: 14px;
     /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
@@ -558,7 +568,6 @@ li a {
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
     vertical-align: middle;
-    
 }
 
 .side-map {}
